@@ -1,0 +1,48 @@
+[
+    {
+        "name": "fennb/phirehose",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fennb/phirehose.git",
+            "reference": "fe8d322690c3d106b2b2fc73c7df4a9581b16be9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fennb/phirehose/zipball/fe8d322690c3d106b2b2fc73c7df4a9581b16be9",
+            "reference": "fe8d322690c3d106b2b2fc73c7df4a9581b16be9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.0"
+        },
+        "time": "2014-03-06 02:09:18",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "lib"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL"
+        ],
+        "authors": [
+            {
+                "name": "Fenn Bailey",
+                "homepage": "http://fennb.com/"
+            }
+        ],
+        "description": "A PHP interface to the Twitter Streaming API.",
+        "homepage": "https://github.com/fennb/phirehose",
+        "keywords": [
+            "api",
+            "phirehose",
+            "php",
+            "streaming",
+            "twitter"
+        ]
+    }
+]
