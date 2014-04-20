@@ -35,8 +35,18 @@ Usage
 --------------
 
 ```sh
-php process.php [hashtag(s) seperated by comma ','] [limit] 
-e.g php process.php ukraine,mh370 1000
+php process.php [hashtag] [limit]
+    arguments
+        - [hashtag] seperated by ','
+            e.g. 
+            - ukraine,mh370
+            - mh370
+        - [limit] number (optional) (default 1000)
+            e.g. 
+            - 250
+            - 500
+    e.g.
+        php process.php ukraine,mh370 1000
 
 php consumer.php
 ```
