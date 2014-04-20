@@ -23,6 +23,14 @@ cd twitterstream
 php composer.phar self-update && php composer.phar install
 ```
 
+Requirements
+-----------
+
+  - Create app on [Twitter Dev](https://apps.twitter.com/) & obtain App Credentials
+  - Obtain OAuth Credentials
+  - Edit details in ```process.php```
+
+
 Usage
 --------------
 
@@ -51,5 +59,3 @@ MIT
 
 [PHP 5.3+]:http://www.php.net/
 [Phirehose]:https://github.com/fennb/phirehose
-
-    

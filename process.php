@@ -94,6 +94,10 @@ class TwitterStream extends \OauthPhirehose {
     $this->limit = $limit;
     $this->log('Limit is ' . $limit);
   }
+
+  public function process() {
+    $this->consume();
+  }
 };
 
 define("TWITTER_CONSUMER_KEY", "dbx0YXmdJ2fQFApOuT0FBg");
@@ -118,4 +122,4 @@ if (!empty($argv[2])) {
 $twitter = new TwitterStream(OAUTH_TOKEN, OAUTH_SECRET);
 $twitter->setTrack($tags);
 $twitter->setLimit($limit);
-$twitter->consume();
+$twitter->process();

@@ -26,14 +26,14 @@ class TwitterStreamConsumer {
     $this->log('Fetching data from: ' . $this->queueDir . DIRECTORY_SEPARATOR . $this->queueFile);
   }
 
-  public function process() {
+  public function consume() {
     $queueFile = $this->queueDir . DIRECTORY_SEPARATOR . $this->queueFile;
     
 
-    $this->processQueueFile($queueFile);    
+    $this->consumeQueueFile($queueFile);    
   }
 
-  public function processQueueFile($queueFile) {
+  public function consumeQueueFile($queueFile) {
     $this->log('Processing file: ' . $queueFile);
 
     /* Open File */
@@ -71,7 +71,7 @@ class TwitterStreamConsumer {
     flock($fp, LOCK_UN);
     fclose($fp);
 
-    // $this->log('Successfully processed ' . $statusCounter . ' tweets from ' . $queueFile);
+    // $this->log('Successfully consumeed ' . $statusCounter . ' tweets from ' . $queueFile);
   }
 
   /**
@@ -86,4 +86,4 @@ class TwitterStreamConsumer {
 };
 
 $consumer = new TwitterStreamConsumer();
-$consumer->process();
+$consumer->consume();
